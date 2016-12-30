@@ -12,6 +12,28 @@
     android:gravity="center"
     tools:context="com.example.artyte.pracnum.MainActivity">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/voice_lang_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Japanese Voice"
+            android:textSize="25dp"/>
+
+        <Button
+            android:id="@+id/lang_chooser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Language"
+            android:onClick="langChoose"/>
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/text"
         android:layout_width="wrap_content"
