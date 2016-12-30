@@ -35,14 +35,23 @@ public class MainActivity extends Activity {
         });
     }
 
-    protected void newNum(View v) {
+    protected void newNum(final View v) {
         tts = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             public void onInit(int status) {
                 if (status == TextToSpeech.SUCCESS) {
                     tts.setLanguage(Locale.JAPAN);
 
                     int min = 0;
-                    int max = 100000000;
+                    int max = 0;
+                    int choice = v.getId();
+
+                    switch(choice) {
+                        case R.id.r0t10: min = 0; max = 10; break;
+                        case R.id.r11t100: min = 11; max = 100; break;
+                        case R.id.r101t10k: min = 101; max = 10000; break;
+                        case R.id.r10_1kt100m: min = 10001; max = 100000000; break;
+                    }
+
                     int randomNum = ThreadLocalRandom.current().nextInt(min, max + 1);
 
                     t1 = (TextView) findViewById(R.id.text);

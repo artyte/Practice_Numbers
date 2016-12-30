@@ -9,13 +9,15 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context="com.example.artyte.pracnum.MainActivity">
 
     <TextView
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="お早う"
+        android:textSize="20pt"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -24,9 +26,31 @@
         android:onClick="listen"/>
 
     <Button
+        android:id="@+id/r0t10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New number"
+        android:text="Singles"
+        android:onClick="newNum"/>
+
+    <Button
+        android:id="@+id/r11t100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doubles"
+        android:onClick="newNum"/>
+
+    <Button
+        android:id="@+id/r101t10k"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily Numbers"
+        android:onClick="newNum"/>
+
+    <Button
+        android:id="@+id/r10_1kt100m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Big numbers"
         android:onClick="newNum"/>
 
 
