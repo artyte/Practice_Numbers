@@ -2,7 +2,6 @@ package com.example.artyte.pracnum;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
@@ -16,7 +15,7 @@ public class MainActivity extends Activity {
 
     TextToSpeech tts;
     TextView t1;
-    static Locale loc = Locale.JAPAN;
+    Locale loc = Locale.JAPAN;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
